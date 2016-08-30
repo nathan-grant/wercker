@@ -182,6 +182,7 @@ var (
 		cli.Float64Flag{Name: "no-response-timeout", Value: 5, Usage: "Timeout if no script output is received in this many minutes."},
 		cli.Float64Flag{Name: "command-timeout", Value: 25, Usage: "Timeout if command does not complete in this many minutes."},
 		cli.StringFlag{Name: "wercker-yml", Value: "", Usage: "Specify a specific yaml file.", EnvVar: "WERCKER_YML_FILE"},
+		cli.StringFlag{Name: "pipeline", Value: "", EnvVar: "WERCKER_PIPELINE", Usage: "Alternate pipeline name to execute."},
 	}
 
 	PullFlagSet = [][]cli.Flag{
